@@ -1,0 +1,10 @@
+<h1>tareas</h1>
+<input type="text" placeholder="nueva tarea" #task/>
+<br>
+<br>
+<button (click)="addtask(task.value)">Añadir</button> 
+<br>
+<br>
+<ul>
+  <li *ngfor="let item of list">{{item.name}}<button (click)="removetask(item.id)">X</button></li></ul>
+
